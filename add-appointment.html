@@ -2,12 +2,12 @@
 <html lang="en">
 
 
-<!-- add-appointment24:07-->
+<!-- edit-appointment24:07-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <title>KueKita - Bakery, Desert, Snacks</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
@@ -24,7 +24,7 @@
         <div class="header">
 			<div class="header-left">
 				<a href="index-2.html" class="logo">
-					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>KueKita</span>
 				</a>
 			</div>
 			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -296,7 +296,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <h4 class="page-title">Add Appointment</h4>
+                        <h4 class="page-title">Edit Order</h4>
                     </div>
                 </div>
                 <div class="row">
@@ -305,17 +305,22 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-										<label>Appointment ID</label>
-										<input class="form-control" type="text" value="APT-0001" readonly="">
+										<label>Order ID</label>
+										<input class="form-control" type="text" value="ORD-0001" readonly="">
 									</div>
                                 </div>
                                 <div class="col-md-6">
 									<div class="form-group">
-										<label>Patient Name</label>
+										<label>Customer Name</label>
 										<select class="select">
 											<option>Select</option>
-											<option>Jennifer Robinson</option>
-											<option>Terry Baker</option>
+											<option class="selected">Alam Verdian Syah Daulay</option>
+											<option>Berry Lesmana</option>
+											<option>Dasa Wacana</option>
+											<option>Deprinda Widya</option>
+											<option>Elisa Maryati</option>
+											<option>Fasha Patria</option>
+											<option>Fauzan Adhima</option>
 										</select>
 									</div>
                                 </div>
@@ -326,23 +331,28 @@
                                         <label>Department</label>
                                         <select class="select">
                                             <option>Select</option>
-                                            <option>Dentists</option>
-                                            <option>Neurology</option>
-                                            <option>Opthalmology</option>
-                                            <option>Orthopedics</option>
-                                            <option>Cancer Department</option>
-                                            <option>ENT Department</option>
+                                            <option>Executive Pastry Chef</option>
+                                            <option>Sous Chef Pastry</option>
+                                            <option>Chef de Partie</option>
+                                            <option>Junior Sous Chef Patry</option>
+                                            <option>Pastry Cook</option>
+                                            <option>Apprentice</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Doctor</label>
+                                        <label>Patissier</label>
                                         <select class="select">
 											<option>Select</option>
-											<option>Cristina Groves</option>
-											<option>Marie Wells</option>
-											<option>Henry Daniels</option>
+											<option>Vale Wells</option>
+											<option>Mark Hunter</option>
+											<option>Michael Sullivan</option>
+											<option>Ronald Jacobs</option>
+											<option>Albert Sandoval</option>
+											<option>Diana Bailey</option>
+											<option>Shirley Willis</option>
+											<option class="selected">Gullivan Stove</option>
                                         </select>
                                     </div>
                                 </div>
@@ -368,13 +378,13 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Patient Email</label>
+                                        <label>Customer Email</label>
                                         <input class="form-control" type="email">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Patient Phone Number</label>
+                                        <label>Customer Phone Number</label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
@@ -384,22 +394,28 @@
                                 <textarea cols="30" rows="4" class="form-control"></textarea>
                             </div>
                             <div class="form-group">
-                                <label class="display-block">Appointment Status</label>
+                                <label class="display-block">Order Status</label>
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="radio" name="status" id="product_active" value="option1" checked>
 									<label class="form-check-label" for="product_active">
-									Active
+									Success
 									</label>
 								</div>
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="radio" name="status" id="product_inactive" value="option2">
 									<label class="form-check-label" for="product_inactive">
-									Inactive
+									Ongoing
+									</label>
+								</div>
+                                <div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="status" id="product_inactive" value="option2">
+									<label class="form-check-label" for="product_inactive">
+									Canceled
 									</label>
 								</div>
                             </div>
                             <div class="m-t-20 text-center">
-                                <button class="btn btn-primary submit-btn">Create Appointment</button>
+                                <button class="btn btn-primary submit-btn">Save</button>
                             </div>
                         </form>
                     </div>
@@ -612,7 +628,6 @@
                     <div class="topnav-dropdown-footer">
                         <a href="chat.html">See all messages</a>
                     </div>
-					
                 </div>
             </div>
         </div>
@@ -626,7 +641,7 @@
 	<script src="assets/js/moment.min.js"></script>
 	<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/app.js"></script>
-	<script>
+		<script>
             $(function () {
                 $('#datetimepicker3').datetimepicker({
                     format: 'LT'
@@ -637,5 +652,5 @@
 </body>
 
 
-<!-- add-appointment24:07-->
+<!-- edit-appointment24:07-->
 </html>

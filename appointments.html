@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <title>KueKita - Bakery, Desert, Snacks</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
@@ -23,7 +23,7 @@
         <div class="header">
 			<div class="header-left">
 				<a href="index-2.html" class="logo">
-					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>KueKita</span>
 				</a>
 			</div>
 			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -143,7 +143,7 @@
                             <a href="patients.html"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
                         </li>
                         <li class="active">
-                            <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
+                            <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Order</span></a>
                         </li>
                         <li>
                             <a href="schedule.html"><i class="fa fa-calendar-check-o"></i> <span>Doctor Schedule</span></a>
@@ -295,10 +295,10 @@
             <div class="content">
                 <div class="row">
                     <div class="col-sm-4 col-3">
-                        <h4 class="page-title">Appointments</h4>
+                        <h4 class="page-title">Order</h4>
                     </div>
                     <div class="col-sm-8 col-9 text-right m-b-20">
-                        <a href="add-appointment.html" class="btn btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Appointment</a>
+                        <a href="add-appointment.html" class="btn btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Order</a>
                     </div>
                 </div>
 				<div class="row">
@@ -307,27 +307,27 @@
 							<table class="table table-striped custom-table">
 								<thead>
 									<tr>
-										<th>Appointment ID</th>
-										<th>Patient Name</th>
+										<th>Order ID</th>
+										<th>Customer Name</th>
 										<th>Age</th>
-										<th>Doctor Name</th>
+										<th>Patissier Name</th>
 										<th>Department</th>
-										<th>Appointment Date</th>
-										<th>Appointment Time</th>
+										<th>Order Date</th>
+										<th>Due Date</th>
 										<th>Status</th>
 										<th class="text-right">Action</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>APT0001</td>
-										<td><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt=""> Denise Stevens</td>
-										<td>35</td>
-										<td>Henry Daniels</td>
-										<td>Cardiology</td>
-										<td>30 Dec 2018</td>
-										<td>10:00am - 11:00am</td>
-										<td><span class="custom-badge status-red">Inactive</span></td>
+										<td>ORD0001</td>
+										<td><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt="">  Alam Verdian Syah Daulay</td>
+										<td>23</td>
+										<td>Gullivan Stove</td>
+										<td>Executive Pastry Chef</td>
+										<td>26 April 2022</td>
+										<td>29 April 2022</td>
+										<td><span class="custom-badge status-orange">Ongoing</span></td>
 										<td class="text-right">
 											<div class="dropdown dropdown-action">
 												<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
@@ -339,14 +339,33 @@
 										</td>
 									</tr>
 									<tr>
-										<td>APT0002</td>
-										<td><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt=""> Denise Stevens</td>
-										<td>35</td>
+										<td>ORD0002</td>
+										<td><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt="">  Deprinda Widya</td>
+										<td>22</td>
+										<td>Vale Wells</td>
+										<td>Sous Chef Pastry</td>
+										<td>23 April 2022</td>
+										<td>26 April 2022</td>
+										<td><span class="custom-badge status-green">Success</span></td>
+										<td class="text-right">
+											<div class="dropdown dropdown-action">
+												<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="edit-appointment.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+													<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_appointment"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+                                    <tr>
+										<td>ORD0003</td>
+										<td><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt="">  Rifki Maulana</td>
+										<td>22</td>
 										<td>Henry Daniels</td>
-										<td>Cardiology</td>
-										<td>30 Dec 2018</td>
-										<td>10:00am - 11:00am</td>
-										<td><span class="custom-badge status-green">Active</span></td>
+										<td>Assistant Pastry Chef</td>
+										<td>25 April 2022</td>
+										<td>28 April 2022</td>
+										<td><span class="custom-badge status-red">Canceled</span></td>
 										<td class="text-right">
 											<div class="dropdown dropdown-action">
 												<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
