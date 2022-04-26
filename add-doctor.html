@@ -2,12 +2,12 @@
 <html lang="en">
 
 
-<!-- edit-appointment24:07-->
+<!-- add-doctor24:06-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>KueKita - Bakery, Desert, Snacks</title>
+    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
@@ -24,7 +24,7 @@
         <div class="header">
 			<div class="header-left">
 				<a href="index-2.html" class="logo">
-					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>KueKita</span>
+					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
 				</a>
 			</div>
 			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -137,13 +137,13 @@
                         <li>
                             <a href="index-2.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
                         </li>
-						<li>
+						<li class="active">
                             <a href="doctors.html"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
                         </li>
                         <li>
                             <a href="patients.html"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
                         </li>
                         <li>
@@ -296,126 +296,154 @@
             <div class="content">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <h4 class="page-title">Edit Order</h4>
+                        <h4 class="page-title">Add Doctor</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <form>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-sm-6">
                                     <div class="form-group">
-										<label>Order ID</label>
-										<input class="form-control" type="text" value="ORD-0001" readonly="">
-									</div>
-                                </div>
-                                <div class="col-md-6">
-									<div class="form-group">
-										<label>Customer Name</label>
-										<select class="select">
-											<option>Select</option>
-											<option class="selected">Alam Verdian Syah Daulay</option>
-											<option>Berry Lesmana</option>
-											<option>Dasa Wacana</option>
-											<option>Deprinda Widya</option>
-											<option>Elisa Maryati</option>
-											<option>Fasha Patria</option>
-											<option>Fauzan Adhima</option>
-										</select>
-									</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Department</label>
-                                        <select class="select">
-                                            <option>Select</option>
-                                            <option>Executive Pastry Chef</option>
-                                            <option>Sous Chef Pastry</option>
-                                            <option>Chef de Partie</option>
-                                            <option>Junior Sous Chef Patry</option>
-                                            <option>Pastry Cook</option>
-                                            <option>Apprentice</option>
-                                        </select>
+                                        <label>First Name <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Patissier</label>
-                                        <select class="select">
-											<option>Select</option>
-											<option>Vale Wells</option>
-											<option>Mark Hunter</option>
-											<option>Michael Sullivan</option>
-											<option>Ronald Jacobs</option>
-											<option>Albert Sandoval</option>
-											<option>Diana Bailey</option>
-											<option>Shirley Willis</option>
-											<option class="selected">Gullivan Stove</option>
-                                        </select>
+                                        <label>Last Name</label>
+                                        <input class="form-control" type="text">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Date</label>
+                                        <label>Username <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Email <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input class="form-control" type="password">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Confirm Password</label>
+                                        <input class="form-control" type="password">
+                                    </div>
+                                </div>
+								<div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Date of Birth</label>
                                         <div class="cal-icon">
                                             <input type="text" class="form-control datetimepicker">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Time</label>
-                                        <div class="time-icon">
-                                            <input type="text" class="form-control" id="datetimepicker3">
-                                        </div>
-                                    </div>
+                                <div class="col-sm-6">
+									<div class="form-group gender-select">
+										<label class="gen-label">Gender:</label>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="radio" name="gender" class="form-check-input">Male
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="radio" name="gender" class="form-check-input">Female
+											</label>
+										</div>
+									</div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
+								<div class="col-sm-12">
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label>Address</label>
+												<input type="text" class="form-control ">
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="form-group">
+												<label>Country</label>
+												<select class="form-control select">
+													<option>USA</option>
+													<option>United Kingdom</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="form-group">
+												<label>City</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="form-group">
+												<label>State/Province</label>
+												<select class="form-control select">
+													<option>California</option>
+													<option>Alaska</option>
+													<option>Alabama</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="form-group">
+												<label>Postal Code</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+									</div>
+								</div>
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Customer Email</label>
-                                        <input class="form-control" type="email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Customer Phone Number</label>
+                                        <label>Phone </label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
+                                <div class="col-sm-6">
+									<div class="form-group">
+										<label>Avatar</label>
+										<div class="profile-upload">
+											<div class="upload-img">
+												<img alt="" src="assets/img/user.jpg">
+											</div>
+											<div class="upload-input">
+												<input type="file" class="form-control">
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label>Short Biography</label>
+                                <textarea class="form-control" rows="3" cols="30"></textarea>
                             </div>
                             <div class="form-group">
-                                <label>Message</label>
-                                <textarea cols="30" rows="4" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="display-block">Order Status</label>
+                                <label class="display-block">Status</label>
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="radio" name="status" id="product_active" value="option1" checked>
-									<label class="form-check-label" for="product_active">
-									Success
+									<input class="form-check-input" type="radio" name="status" id="doctor_active" value="option1" checked>
+									<label class="form-check-label" for="doctor_active">
+									Active
 									</label>
 								</div>
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="radio" name="status" id="product_inactive" value="option2">
-									<label class="form-check-label" for="product_inactive">
-									Ongoing
-									</label>
-								</div>
-                                <div class="form-check form-check-inline">
-									<input class="form-check-input" type="radio" name="status" id="product_inactive" value="option2">
-									<label class="form-check-label" for="product_inactive">
-									Canceled
+									<input class="form-check-input" type="radio" name="status" id="doctor_inactive" value="option2">
+									<label class="form-check-label" for="doctor_inactive">
+									Inactive
 									</label>
 								</div>
                             </div>
                             <div class="m-t-20 text-center">
-                                <button class="btn btn-primary submit-btn">Save</button>
+                                <button class="btn btn-primary submit-btn">Create Doctor</button>
                             </div>
                         </form>
                     </div>
@@ -641,16 +669,8 @@
 	<script src="assets/js/moment.min.js"></script>
 	<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/app.js"></script>
-		<script>
-            $(function () {
-                $('#datetimepicker3').datetimepicker({
-                    format: 'LT'
-
-                });
-            });
-     </script>
 </body>
 
 
-<!-- edit-appointment24:07-->
+<!-- add-doctor24:06-->
 </html>
